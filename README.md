@@ -1,18 +1,18 @@
-## Getting Started
+# Crud Lista de Tarefas
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Projeto simples de API RESTful para gerenciamento de tarefas, utilizando Java + Spark Java.
 
-## Folder Structure
+## Visão Geral
 
-The workspace contains two folders by default, where:
+Este projeto permite criar, ler, atualizar e deletar tarefas (lista de tarefas) através de endpoints HTTP.  
+Foi desenvolvido como uma aplicação de exemplo para demonstrar o uso de Spark Java em um cenário CRUD.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Funcionalidades
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+A API disponibiliza os seguintes endpoints:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- `GET /tarefas` — listar todas as tarefas  
+- `GET /tarefas/{id}` — recuperar uma tarefa específica  
+- `POST /tarefas` — criar uma nova tarefa  
+- `PUT /tarefas/{id}` — atualizar uma tarefa existente  
+- `DELETE /tarefas/{id}` — remover uma tarefa  
